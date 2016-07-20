@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="project.jeonghoon.com.uspatentsearchapplication.SummationActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text = "발명의 주제"
+                android:textSize ="15sp"
+                android:textColor="#ff6200"
+                android:typeface="sans"
+                android:id ="@+id/inventionTitle"/>
+        </ScrollView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서지 요약 정보"
+            android:id="@+id/bDownloadFullText" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp" >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text = "발명자"
+            android:textSize ="17sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="New Text"
+            android:id="@+id/inventors" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp" >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text = "출원자"
+            android:textSize ="17sp"/>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/applicant"
+            android:textColor="#30db12"
+                android:typeface="serif" />
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="요약"
+        android:id="@+id/textView3"
+        android:textSize = "17sp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:id="@+id/summation"
+            android:textIsSelectable="false"
+            android:textColor="#002bb9" />
+    </ScrollView>
+
+
+
+</LinearLayout>

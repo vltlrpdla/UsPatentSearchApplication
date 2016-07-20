@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contryCode">
+        <item >US</item>
+        <item >EP</item>
+        <item >WO</item>
+        <item >JP</item>
+        <item >CN</item>
+    </string-array>
+</resources>
